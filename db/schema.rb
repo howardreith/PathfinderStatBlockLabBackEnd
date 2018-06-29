@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180629200404) do
+ActiveRecord::Schema.define(version: 20180629202921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,46 @@ ActiveRecord::Schema.define(version: 20180629200404) do
     t.datetime "updated_at", null: false
     t.string "alignment"
     t.string "type"
+    t.string "subtype"
+    t.string "size"
+    t.integer "initiative"
+    t.string "senses"
+    t.string "perception"
+    t.string "languages"
+    t.string "skills"
+    t.string "ability_scores"
+    t.string "items"
+    t.string "appearance"
+    t.string "description"
+    t.string "environment"
+    t.string "organization"
+    t.string "treasure"
+    t.string "source"
+    t.string "ac"
+    t.string "ac_notes"
+    t.string "cmd"
+    t.string "saves"
+    t.integer "hp"
+    t.string "hd"
+    t.string "dr"
+    t.string "fast_healing_regen"
+    t.string "immunities"
+    t.string "resistances"
+    t.integer "sr"
+    t.string "weaknesses"
+    t.string "defensive_abilities"
+    t.string "speed"
+    t.string "speed_note"
+    t.string "melee"
+    t.string "cmb"
+    t.string "ranged"
+    t.string "offense_note"
+    t.string "special_abilities"
+    t.string "spell_like_abilities"
+    t.string "spells_known"
+    t.string "spells_prepared"
+    t.string "feats"
+    t.string "additional_special_qualities"
     t.index ["user_id"], name: "index_creatures_on_user_id"
   end
 

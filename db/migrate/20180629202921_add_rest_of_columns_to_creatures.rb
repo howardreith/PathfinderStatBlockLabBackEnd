@@ -1,0 +1,44 @@
+class AddRestOfColumnsToCreatures < ActiveRecord::Migration[5.1]
+  def change
+    add_column :creatures, :subtype, :string
+    add_column :creatures, :size, :string
+    add_column :creatures, :initiative, :integer
+    add_column :creatures, :senses, :string
+    add_column :creatures, :perception, :string
+    add_column :creatures, :languages, :string
+    add_column :creatures, :skills, :string
+    add_column :creatures, :ability_scores, :string
+    add_column :creatures, :items, :string
+    add_column :creatures, :appearance, :string
+    add_column :creatures, :description, :string
+    add_column :creatures, :environment, :string
+    add_column :creatures, :organization, :string
+    add_column :creatures, :treasure, :string
+    add_column :creatures, :source, :string
+    add_column :creatures, :ac, :string
+    add_column :creatures, :ac_notes, :string
+    add_column :creatures, :cmd, :string
+    add_column :creatures, :saves, :string
+    add_column :creatures, :hp, :integer
+    add_column :creatures, :hd, :string
+    add_column :creatures, :dr, :string
+    add_column :creatures, :fast_healing_regen, :string
+    add_column :creatures, :immunities, :string
+    add_column :creatures, :resistances, :string
+    add_column :creatures, :sr, :integer
+    add_column :creatures, :weaknesses, :string
+    add_column :creatures, :defensive_abilities, :string
+    add_column :creatures, :speed, :string
+    add_column :creatures, :speed_note, :string
+    add_column :creatures, :melee, :string
+    add_column :creatures, :cmb, :string
+    add_column :creatures, :ranged, :string
+    add_column :creatures, :offense_note, :string
+    add_column :creatures, :special_abilities, :string
+    add_column :creatures, :spell_like_abilities, :string
+    add_column :creatures, :spells_known, :string
+    add_column :creatures, :spells_prepared, :string
+    add_column :creatures, :feats, :string
+    add_column :creatures, :additional_special_qualities, :string
+  end
+end
