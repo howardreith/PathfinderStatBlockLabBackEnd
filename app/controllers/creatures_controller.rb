@@ -52,7 +52,7 @@ class CreaturesController < ProtectedController
       params.require(:creature).permit(:name, :cr, :user_id, :alignment, :type,
         :subtype, :size, :initiative, :senses, :perception, :languages, :skills,
          :items, :appearance, :description, :environment, :str, :dex, :con, :int,
-        :wis, :cha,
+         :wis, :cha, :reach,
          :organization, :treasure, :source, :ac, :ac_notes, :cmd, :saves, :hp,
          :hd, :dr, :fast_healing_regen, :immunities, :resistances, :sr,
          :weaknesses, :defensive_abilities, :speed, :speed_note, :melee, :cmb,

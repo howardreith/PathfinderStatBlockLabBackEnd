@@ -4,7 +4,7 @@ class CreatureSerializer < ActiveModel::Serializer
   :appearance, :description, :environment, :organization, :treasure, :source,
   :ac, :ac_notes, :cmd, :saves, :hp, :hd, :dr, :fast_healing_regen, :immunities,
   :resistances, :sr, :weaknesses, :defensive_abilities, :speed, :speed_note,
-  :melee, :cmb, :ranged, :offense_note, :special_abilities,
+  :melee, :cmb, :ranged, :offense_note, :special_abilities, :reach,
   :spell_like_abilities, :spells_known, :spells_prepared, :feats,
   :additional_special_qualities
   has_one :user

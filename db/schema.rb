@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180630144304) do
+ActiveRecord::Schema.define(version: 20180630154924) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20180630144304) do
     t.string "int"
     t.string "wis"
     t.string "cha"
+    t.string "reach"
     t.index ["user_id"], name: "index_creatures_on_user_id"
   end
 
