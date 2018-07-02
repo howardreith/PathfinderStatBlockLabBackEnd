@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180630212202) do
+ActiveRecord::Schema.define(version: 20180702171029) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20180630212202) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "alignment"
-    t.string "subtype"
     t.string "size"
     t.integer "initiative"
     t.string "senses"
@@ -71,6 +70,7 @@ ActiveRecord::Schema.define(version: 20180630212202) do
     t.integer "flat_footed"
     t.string "creature_category"
     t.integer "dodgeac"
+    t.string "subcategory"
     t.index ["user_id"], name: "index_creatures_on_user_id"
   end
 

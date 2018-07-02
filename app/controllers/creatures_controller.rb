@@ -50,7 +50,7 @@ class CreaturesController < ProtectedController
     # Only allow a trusted parameter "white list" through.
     def creature_params
       params.require(:creature).permit(:name, :cr, :user_id, :alignment,
-        :subtype, :size, :initiative, :senses, :perception, :languages, :skills,
+        :subcategory, :size, :initiative, :senses, :perception, :languages, :skills,
          :items, :appearance, :description, :environment, :str, :dex, :con, :int,
          :wis, :cha, :reach, :dodgeac, :flat_footed, :creature_category,
          :organization, :treasure, :source, :ac, :ac_notes, :cmd, :saves, :hp,
