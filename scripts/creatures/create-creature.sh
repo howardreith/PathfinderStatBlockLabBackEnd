@@ -8,7 +8,6 @@ curl "http://localhost:4741/creatures" \
   --data '{
     "creature": {
       "name": "'"${name}"'",
-      "cr": "'"${cr}"'",
       "user_id": "'"${user_id}"'"
     }
   }'
