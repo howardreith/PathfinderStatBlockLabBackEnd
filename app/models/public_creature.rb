@@ -1,0 +1,2 @@
+class PublicCreature < ApplicationRecord
+end
