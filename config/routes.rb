@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :public_creatures
+  resources :foods
   resources :public_creatures, only: %i[index show]
   resources :creatures
   # RESTful routes
